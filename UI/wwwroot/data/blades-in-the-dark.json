@@ -3,9 +3,14 @@
 	"Language": "English",
 	"Playbooks": [
 		{
-			"Name": "Cutter",
-			"Hook": "Cutters are good at winning fights, with violence and with intimidation. Play a Cutter if you want to get your way.",
+			"Name": "Hellion",
+			"Hook": "Hellions let their brawn do the talking, turning their problems in much battered ones. Play a Hellion if you want to get your way with violence and with intimidation..",
 			"SpecialAbilities": [
+				{
+					"TimesTakeable": 1,
+					"Name": "Tough as Nails",
+					"Description": "Penalties from harm are one level less severe. You must still record them on your sheet. Original harm level still applies. Level 4 harm is still fatal."
+				},
 				{
 					"TimesTakeable": 1,
 					"Name": "Battleborn",
@@ -13,33 +18,33 @@
 				},
 				{
 					"TimesTakeable": 1,
-					"Name": "Bodyguard",
+					"Name": "Got Their Backs",
 					"Description": "When you protect a teammate, take +1d to your resistance roll. When you gather info to anticipate possible threats in the current situation, you get +1 effect."
 				},
 				{
 					"TimesTakeable": 1,
-					"Name": "Ghost Fighter",
-					"Description": "You may imbue your hands, melee weapons, or tools with spirit energy. You gain potency in combat vs. the supernatural. You may grapple with spirits to restrain and capture them."
+					"Name": "Flash Forge (G)(P)",
+					"Description": "When you gain this ability for the first time, Choose Pith or Gyre. You can Push yourself to manifest a weapon made of Gyre or Pith energy, or imbue an existing weapon with it. Gain Potency when fighting others. Your blows can effect even supernatural spirits of the matching type. The effect ends if you roll a bad outcome while wielding this weapon. You can choose this ability a second time to choose a second type of energy."
 				},
 				{
 					"TimesTakeable": 1,
-					"Name": "Leader",
-					"Description": "When you Command a cohort in combat, they continue to fight when they would otherwise break (they're not taken out when they suffer level 3 harm). They gain +1 effect and 1 armor."
+					"Name": "Lead from the front",
+					"Description": "When you Command a Cohort in combat, they continue to fight when they would otherwise break (they're not taken out when they suffer level 3 harm). They gain +1 effect and 1 armour while you lead them."
 				},
 				{
 					"TimesTakeable": 1,
-					"Name": "Mule",
+					"Name": "More Weight",
 					"Description": "Your load limits are higher. Light: 5. Normal: 7. Heavy: 8."
 				},
 				{
 					"TimesTakeable": 1,
-					"Name": "Not to be Trifled With",
-					"Description": "You can push yourself to do one of the following: perform a feat of physical force that verges on the superhuman—engage a small gang on equal footing in close combat."
+					"Name": "Not to be Fucked With",
+					"Description": "You can push yourself to do one of the following: perform a feat of physical force that verges on the superhuman ; engage a small gang on equal footing in close combat ; turn anything into a deadly weapon."
 				},
 				{
 					"TimesTakeable": 1,
-					"Name": "Savage",
-					"Description": "When you unleash physical violence, it's especially frightening. When you Command a frightened target, take +1d."
+					"Name": "The Look",
+					"Description": "Whether it is your impressive physique, storied scars, or mere presence alone, people tend to move a little faster when you start talking. Take +1d when you Command a frightened or intimidated target."
 				},
 				{
 					"TimesTakeable": 1,
@@ -55,11 +60,11 @@
 			"Rolodex": {
 				"Name": "Dangerous Friends",
 				"Friends": [
-					"Marlane, a pugilist",
-					"Chael, a vicious thug",
-					"Mercy, a cold killer",
-					"Grace, an extortionist",
-					"Sawtooth, a physicker"
+					"A scarred veteran",
+					"A jovial street doctor",
+					"A vicious extortionist",
+					"A corrupt Hornet",
+					"A passionate labour organizer"
 				]
 			},
 			"Items": [
@@ -81,7 +86,7 @@
 				},
 				{
 					"Bulk": 0,
-					"Name": "Rage essence vial"
+					"Name": "Vial of Fireblossom"
 				}
 			],
 			"DefaultActionPoints": [
@@ -94,46 +99,56 @@
 					"Points": 1
 				}
 			],
-			"ExperienceCondition": "You addressed a challenge with violence or coercion"
+			"ExperienceCondition": "You addressed a challenge with violence or intimidation."
 		},
 		{
-			"Name": "Hound",
-			"Hook": "Hounds are good at tracking things down and also long-distance combat. Play a Hound if you want to choose your battles.",
+			"Name": "Falcon",
+			"Hook": "Falcons are precise hunters good at tracking their foes and picking their battles. Play a Hound if you want to choose your battles.",
 			"SpecialAbilities": [
 				{
 					"TimesTakeable": 1,
-					"Name": "Sharpshooter",
-					"Description": "You can push yourself to do one of the following: make a ranged attack at extreme distance beyond what’s normal for the weapon—unleash a barrage of rapid fire to suppress the enemy."
+					"Name": "Eyes on the Street",
+					"Description": "Start with a Trained Hunting Pet (Cohort: Expert Hunter). You can share your senses and thoughts with your hunting pet whether you are conscious or unconscious. You can’t control it directly, but you can give it instructions to follow."
 				},
 				{
 					"TimesTakeable": 1,
-					"Name": "Focused",
-					"Description": "You may expend your special armor to resist a consequence of surprise or mental harm (fear, confusion, losing track of someone) or to push yourself for ranged combat or tracking."
+					"Name": "Sharpshooter",
+					"Description": "You can push yourself to do one of the following: make a ranged attack at an extreme distance beyond what’s normal for the weapon, unleash a barrage of rapid fire on everyone in the immediate vicinity."
+				},
+				{
+					"TimesTakeable": 1,
+					"Name": "Move like Lightning",
+					"Description": "You can expend your special armour to either to temporarily incapacitate someone within arms reach, or to resist the consequence of surprise (fear, confusion, losing track of someone, etc) or mental harm."
 				},
 				{
 					"TimesTakeable": 2,
-					"Name": "Ghost Hunter",
-					"Description": "Your hunting pet is imbued with spirit energy. It gains potency when tracking or fighting the supernatural, and gains an arcane ability: ghost-form, mind-link, or arrow-swift. Take this ability again to choose an additional arcane ability for your pet."
+					"Name": "Guilded Partner (G)",
+					"Description": "Either through ritual or exposure to the Gyre, your hunting pet has become imbued with arcane power. It gains potency when tracking or fighting the supernatural, and gains one of the following arcane abilities: Phase, Swift, Mercurial. Take this ability again to chose an additional ability for your pet."
 				},
 				{
 					"TimesTakeable": 1,
-					"Name": "Scout",
-					"Description": "When you gather info to locate a target, you get +1 effect. When you hide in a prepared position or use camouflage, you get +1d to rolls to avoid detection."
+					"Name": "Lone Operator",
+					"Description": "When you gather information to discover the location of a target, you get +1 effect. Take +1D on rolls made in situations where you are on your own."
 				},
 				{
 					"TimesTakeable": 1,
-					"Name": "Survivor",
-					"Description": "From hard won experience or occult ritual, you are immune to the poisonous miasma of the deathlands and are able to subsist on the strange flora and fauna there. You get +1 stress box."
+					"Name": "Hard to Put Down",
+					"Description": "You are resistant to the twisting ailments of the Churn and are able to subsist on the strange flora and fauna that exists there. You get +1 stress box and are immune to most poisons and drugs."
 				},
 				{
 					"TimesTakeable": 1,
-					"Name": "Tough as Nails",
-					"Description": "Penalties from harm are one level less severe (though level 4 harm is still fatal)."
+					"Name": "Catch a Ride",
+					"Description": "Don’t spend stress when you flashback to acquire the use of a vehicle as the detail for a score, or as a method of escape."
 				},
 				{
 					"TimesTakeable": 1,
-					"Name": "Vengeful",
-					"Description": "You gain an additional xp trigger: You got payback against someone who harmed you or someone you care about. If your crew helped you get payback, also mark crew xp."
+					"Name": "A Reputation to Uphold",
+					"Description": "At the end of downtime, you can increase your reputation with any faction you are not at war with by +1, to a maximum of +2. It cannot be the same faction as one your crew targeted during your most recent score."
+				},
+				{
+					"TimesTakeable": 1,
+					"Name": "The Most Dangerous Game",
+					"Description": "When you kill an especially powerful enemy, you make take a trophy from them that contains a small piece of their Pith - the essence of their being. The trophy only has value to you. You can use this trophy to increase the effect level of any action that reminds you of the foe you took the trophy from. After it is used, the trophy’s power is depleted and can never be replenished."
 				},
 				{
 					"TimesTakeable": 99,
@@ -144,17 +159,17 @@
 			"Rolodex": {
 				"Name": "Deadly Friends",
 				"Friends": [
-					"Steiner, an assassin",
-					"Celene, a sentinel",
-					"Melvir, a physicker",
-					"Veleris, a spy",
-					"Casta, a bounty hunter"
+					"A stalwart guardian",
+					"A daring pilot",
+					"A stricken paramour",
+					"A slippery spy",
+					"A bounty hunter"
 				]
 			},
 			"Items": [
 				{
 					"Bulk": 1,
-					"Name": "Fine pair of pistols"
+					"Name": "Fine pair of daggers"
 				},
 				{
 					"Bulk": 2,
@@ -162,15 +177,15 @@
 				},
 				{
 					"Bulk": 1,
-					"Name": "Electroplasmic ammunition"
+					"Name": "Scint ammunition"
 				},
 				{
 					"Bulk": 0,
-					"Name": "A trained hunting pet"
+					"Name": "A second trained hunting pet"
 				},
 				{
 					"Bulk": 1,
-					"Name": "Spyglass"
+					"Name": "A Spyglass"
 				}
 			],
 			"DefaultActionPoints": [
@@ -183,51 +198,57 @@
 					"Points": 1
 				}
 			],
-			"ExperienceCondition": "You addressed a challenge with tracking or violence"
+			"ExperienceCondition": "You addressed a challenge with tracking or speed"
 		},
 		{
-			"Name": "Leech",
-			"Hook": "Leeches are good at using alchemy and wrecking stuff with sabotage. Play a Leech if you want to be creative with weird tools.",
+			"Name": "Measure",
+			"Hook": "Measures use scientific methods to harness arcane power. Play a Leech if you want to be creative with magical tools.",
 			"SpecialAbilities": [
 				{
 					"TimesTakeable": 1,
-					"Name": "Alchemist",
-					"Description": "When you invent or craft a creation with alchemical features, take +1 result level to your roll. You begin with one special formula already known."
-				},
-				{
-					"TimesTakeable": 1,
 					"Name": "Analyst",
-					"Description": "During downtime, you get two ticks to distribute among any long term project clocks that involve investigation or learning a new formula or design plan."
-				},
-				{
-					"TimesTakeable": 1,
-					"Name": "Artificer",
-					"Description": "When you invent or craft a creation with spark-craft features, take +1 result level to your roll. You begin with one special design already known."
+					"Description": "During downtime, you get two clock segments to distribute among any long term project clock that involves investigation or learning a new formula or special design. This includes other player’s projects."
 				},
 				{
 					"TimesTakeable": 1,
 					"Name": "Fortitude",
-					"Description": "You may expend your special armor to resist a consequence of fatigue, weakness, or chemical effects, or to push yourself when working with technical skill or handling alchemicals."
+					"Description": "You may expend your special armour to resist a consequence of fatigue, weakness, or chemical effects, or to push yourself when working with technical skill or handling alchemicals."
 				},
 				{
 					"TimesTakeable": 1,
-					"Name": "Ghost Ward",
-					"Description": "You know how to Wreck an area with arcane substances and methods so it is either anathema or enticing to spirits (your choice)."
+					"Name": "Alchemist",
+					"Description": "When you invent or craft a creation with using the alchemical features, you get +1 result level to your roll (a 1-3 become a 4/5, etc). You begin with one special design already known."
+				},
+				
+				{
+					"TimesTakeable": 1,
+					"Name": "Artificer",
+					"Description": "When you invent or craft a creation with coherent features, you get +1 result level to your roll (a 1-3 become a 4/5, etc). You begin with one special design already known."
 				},
 				{
 					"TimesTakeable": 1,
-					"Name": "Physicker",
-					"Description": "You can Tinker with bones, blood, and bodily humours to treat wounds or stabilize the dying. You may study a malady or corpse. Everyone in your crew gets +1d to their healing treatment rolls."
+					"Name": "Coherent Application",
+					"Description": "You learn how to Study an area in order to identify the most effective practical applications of para-scientific formulas to either make it an anathema to the supernatural energies of the Gyre, or enticing to it."
 				},
 				{
 					"TimesTakeable": 1,
-					"Name": "Saboteur",
-					"Description": "When you Wreck, the work is much quieter than it should be and the damage is hidden from casual inspection."
+					"Name": "Sawbones",
+					"Description": "You can Tinker with bones, blood, and bodily humours to treat wounds or stabilize the dying. You may Study a malady or corpse, and gain potency when treating ailments with Gyre features. Everyone in your crew (including you) gets +1d to their healing treatment rolls."
 				},
 				{
 					"TimesTakeable": 1,
-					"Name": "Venomous",
-					"Description": "Choose a drug or poison (from your bandolier stock) to which you have become immune. You can push yourself to secrete it through your skin or saliva or exhale it as a vapor."
+					"Name": "Resourceful",
+					"Description": "You are an expert at breaking objects in ways that are difficult to mend or detect. When you Wreck, your work is much quieter than it should be and the damage is very well-hidden from casual inspection. In addition, you may push yourself to turn anything in your surroundings into a weak alchemical explosive of some kind."
+				},
+				{
+					"TimesTakeable": 1,
+					"Name": "Panacea in the Veins",
+					"Description": "Working with dangerous chemicals, drugs, and poisons is not without its risks. You have taken precautions to inure yourself against their worst effects. Take +1d when you attempt to resist the effects of a poison, drug, or chemical of any kind."
+				},
+				{
+					"TimesTakeable": 1,
+					"Name": "Deus Ex Machina",
+					"Description": "You are constantly tinkering and carry your latest prototype with you at all times. You’re not entirely sure what this strange device will do, but it is brimming with probability. Once per score, you may expend this prototype [load 0] instead of rolling to gain an instant great effect on any action, at the cost of either suffering a moderate harm or a complication, at the GM’s discretion.."
 				},
 				{
 					"TimesTakeable": 99,
@@ -238,11 +259,11 @@
 			"Rolodex": {
 				"Name": "Clever Friends",
 				"Friends": [
-					"Stazia, an apothecary",
-					"Veldren, a psychonaut",
-					"Eckerd, a corpse thief",
-					"Jul, a blood dealer",
-					"Malista, a priestess"
+					"A shady professor",
+					"A sly apothecarian",
+					"A strange dealer",
+					"An ineffable witch",
+					"A professional thief"
 				]
 			},
 			"Items": [
@@ -285,25 +306,35 @@
 					"Points": 2
 				},
 				{
-					"Action": "Wreck",
+					"Action": "Study",
 					"Points": 1
 				}
 			],
-			"ExperienceCondition": "You addressed a challenge with technical skill or mayhem"
+			"ExperienceCondition": "You addressed a challenge with knowledge or technical skill"
 		},
 		{
-			"Name": "Lurk",
-			"Hook": "Lurks are good at sneaking around and breaking into places. Play a Lurk if you want to slink around in the shadows.",
+			"Name": "Crawl",
+			"Hook": "Crawls are good at sneaking around and breaking into places they shouldn't be. Play a Crawl if you want to lurk in the shadows.",
 			"SpecialAbilities": [
 				{
 					"TimesTakeable": 1,
-					"Name": "Infiltrator",
-					"Description": "You are not affected by quality or Tier when you bypass security measures."
+					"Name": "A Nose for Trouble",
+					"Description": "Get increased effect whenever you gather information about the security measures or other defenses in place at the target for score."
 				},
 				{
 					"TimesTakeable": 1,
-					"Name": "Ambush",
-					"Description": "When you attack from hiding or spring a trap, you get +1d."
+					"Name": "Born of Darkness",
+					"Description": "You may expend your special armour to resist a consequence from detection or security measures, or to push yourself for a feat of athletics or stealth."
+				},
+				{
+					"TimesTakeable": 1,
+					"Name": "Infiltrator",
+					"Description": "You are not affected by Quality or Tier when you bypass mundane and supernatural security measures. No one can find any weapons or contraband you conceal on your person."
+				},
+				{
+					"TimesTakeable": 1,
+					"Name": "From the Shadows",
+					"Description": "When you attack from hiding or spring a trap, you get +1d to your roll. You make no sound and leave no trace of your passage if you don’t want to."
 				},
 				{
 					"TimesTakeable": 1,
@@ -313,7 +344,7 @@
 				{
 					"TimesTakeable": 1,
 					"Name": "The Devil's Footsteps",
-					"Description": "When you push yourself, choose one of the following additional benefits: perform a feat of athletics that verges on the superhuman—maneuver to confuse your enemies so they mistakenly attack each other."
+					"Description": "You can push yourself to do one of the following: perform a feat of athletics that verges on the superhuman; maneuver to confuse your enemies so they mistakenly attack each other ; vanish from plain sight."
 				},
 				{
 					"TimesTakeable": 1,
@@ -322,18 +353,13 @@
 				},
 				{
 					"TimesTakeable": 1,
-					"Name": "Ghost Veil",
-					"Description": "You may shift partially into the ghost field, becoming shadowy and insubstantial for a few moments. Take 2 stress when you shift, plus 1 stress for each extra feature: It lasts for a few minutes rather than moments—you are invisible rather than shadowy—you may float through the air like a ghost"
+					"Name": "Wade (P)",
+					"Description": "You may partially shift your physical form into the Shallows, becoming translucent and insubstantial for a few moments. Take 2 stress when you shift, plus 1 stress for each additional feature:  you become invisible rather than translucent ; you can move swiftly from shadow to shadow ; you can bring someone with you."
 				},
 				{
 					"TimesTakeable": 1,
 					"Name": "Reflexes",
-					"Description": "When there's a question about who acts first, the answer is you (two characters with Reflexes act simultaneously)."
-				},
-				{
-					"TimesTakeable": 1,
-					"Name": "Shadow",
-					"Description": "You may expend your special armor to resist a consequence from detection or security measures, or to push yourself for a feat of athletics or stealth."
+					"Description": "When there is a question about who acts first, the answer is always you. Gain increased effect on checks where you seize the initiative."
 				},
 				{
 					"TimesTakeable": 99,
@@ -342,13 +368,13 @@
 				}
 			],
 			"Rolodex": {
-				"Name": "Shady Friends",
+				"Name": "Slippery Friends",
 				"Friends": [
-					"Telda, a beggar",
-					"Darmot, a bluecoat",
-					"Frake, a locksmith",
-					"Roslyn Kellis, a noble",
-					"Petra, a city clerk"
+					"A clueless noble",
+					"A bored locksmith",
+					"A slippery vagabond",
+					"A frustrated clerk",
+					"A crafty officer"
 				]
 			},
 			"Items": [
@@ -366,11 +392,11 @@
 				},
 				{
 					"Bulk": 0,
-					"Name": "Silence potion vial"
+					"Name": "Sound-eating box"
 				},
 				{
 					"Bulk": 1,
-					"Name": "Dark-sight goggles"
+					"Name": "Cat-eye goggles"
 				}
 			],
 			"DefaultActionPoints": [
@@ -386,48 +412,53 @@
 			"ExperienceCondition": "You addressed a challenge with stealth or evasion"
 		},
 		{
-			"Name": "Slide",
-			"Hook": "Slides are good at social situations and subterfuge. Play a Slide if you want to manipulate and deceive people.",
+			"Name": "Knave",
+			"Hook": "Knaves are good at social situations and subterfuge. Play a Slide if you want to talk your way into and out of trouble.",
 			"SpecialAbilities": [
 				{
 					"TimesTakeable": 1,
-					"Name": "Rook's Gambit",
-					"Description": "Take 2 stress to roll your best action rating while performing a different action. Say how you adapt your skill to this use."
-				},
-				{
-					"TimesTakeable": 1,
-					"Name": "Cloak & Dagger",
-					"Description": "When you use a disguise or other form of covert misdirection, you get +1d to rolls to confuse or deflect suspicion. When you throw off your disguise, the resulting surprise gives you the initiative in the situation."
-				},
-				{
-					"TimesTakeable": 1,
-					"Name": "Ghost Voice",
-					"Description": "You know the secret method to interact with a ghost or demon as if it was a normal human, regardless of how wild or feral it appears. You gain potency when communicating with the supernatural."
-				},
-				{
-					"TimesTakeable": 1,
-					"Name": "Like Looking into a Mirror",
-					"Description": "You can always tell when someone is lying to you."
-				},
-				{
-					"TimesTakeable": 1,
-					"Name": "A Little Something on the Side",
-					"Description": "At the end of each downtime phase, you earn +2 stash."
-				},
-				{
-					"TimesTakeable": 1,
-					"Name": "Mesmerism",
-					"Description": "When you Sway someone, you may cause them to forget that it's happened until they next interact with you."
+					"Name": "Gossip Rag",
+					"Description": "Spend no stress to flashback in order to learn a scandalous secret about the target. How badly they react to this knowledge depends on the effect level of the roll."
 				},
 				{
 					"TimesTakeable": 1,
 					"Name": "Subterfuge",
-					"Description": "You may expend your special armor to resist a consequence from suspicion or persuasion, or to push yourself for subterfuge."
+					"Description": "You may expend your special armour to resist a consequence from suspicion, subterfuge or persuasion, or to push yourself to mislead, confuse, or convince."
 				},
 				{
 					"TimesTakeable": 1,
-					"Name": "Trust in Me",
-					"Description": "You get +1d vs. a target with whom you have an intimate relationship."
+					"Name": "Money Talks",
+					"Description": "Take +1D on rolls when you bribe others to do your bidding. You always have something that they want on hand. Define what that is when you use it, then spend the stash to bribe them. There is no limit to the amount of stash that may be required to bribe them."
+				},
+				{
+					"TimesTakeable": 1,
+					"Name": "Cloak and Dagger",
+					"Description": "When you use a disguise or other form of covert misdirection, you get +1D to rolls to confuse or deflect suspicion. When you throw off your disguise, the resulting surprise gives you the initiative in the situation."
+				},
+				{
+					"TimesTakeable": 1,
+					"Name": "The Lost Tongue",
+					"Description": "You have learned one of the secret methods to interact with paranormal beings as though they were mundane humans, regardless of how wild, feral, or alien they seem to be. Gain potency when communicating with supernatural entities."
+				},
+				{
+					"TimesTakeable": 1,
+					"Name": "Masquerade",
+					"Description": "You can take 2 Stress to cast an illusion over your features, temporarily changing any part of your apparent appearance. The trick will fool most senses, but does not hold up to close scrutiny. The effect is lost when you take a harm, if it’s uncovered, or otherwise when you choose to dismiss it."
+				},
+				{
+					"TimesTakeable": 1,
+					"Name": "Friends in Low Places",
+					"Description": "At the start of each score, your character gets 2 Favours. You can call them in at any point during a score to flashback at no stress cost. Any left over favours become stash as the end of your next Downtime phase and do not carry over into the next score."
+				},
+				{
+					"TimesTakeable": 1,
+					"Name": "Code Switch",
+					"Description": "You easily slip between different social contexts. You are not affected by quality or tier when your present yourself as a member of high society, and suffer no penalties when speaking with the downtrodden."
+				},
+				{
+					"TimesTakeable": 1,
+					"Name": "Nemesis",
+					"Description": "The feud you share with your rival is more intimate than mere animosity. You can’t get them out of your mind, and neither can they. Gain a new xp trigger: Entice your rival or thwart their plans."
 				},
 				{
 					"TimesTakeable": 99,
@@ -438,11 +469,11 @@
 			"Rolodex": {
 				"Name": "Sly Friends",
 				"Friends": [
-					"Bryl, a drug dealer",
-					"Bazso Baz, a gang leader",
-					"Klyra, a tavern owner",
-					"Nyryx, a prostitute",
-					"Harker, a jail-bird"
+					"A disciplined drug den owner",
+					"A cunning gang leader",
+					"An unrequited paramour",
+					"A bored socialite",
+					"An observant escort"
 				]
 			},
 			"Items": [
@@ -460,11 +491,11 @@
 				},
 				{
 					"Bulk": 0,
-					"Name": "Trance powder"
+					"Name": "Ash Lotus extract"
 				},
 				{
 					"Bulk": 1,
-					"Name": "A cane-sword"
+					"Name": "A concealed blade"
 				}
 			],
 			"DefaultActionPoints": [
@@ -480,9 +511,14 @@
 			"ExperienceCondition": "You addressed a challenge with deception or influence"
 		},
 		{
-			"Name": "Spider",
-			"Hook": "Spiders are good at masterminding maneuvers. Play a Spider if you want to assist teammates and deal with other factions.",
+			"Name": "Lathe",
+			"Hook": "Lathes weave tapestries of intrigue with the thread of their influence. Play a Lathe if you want to assist teammates and deal with other factions.",
 			"SpecialAbilities": [
+				{
+					"TimesTakeable": 1,
+					"Name": "Entourage",
+					"Description": "You have a personal Cohort that will accompany you on scores. This cohort can never be destroyed, though its membership may fluctuate. The cohort can be of any type and starts out at either 1 quality and 0 scale, or 0 quality and 1 scale. These can be increased separately through long term projects. Take this ability again to gain a second Cohort."
+				},
 				{
 					"TimesTakeable": 1,
 					"Name": "Foresight",
@@ -490,13 +526,13 @@
 				},
 				{
 					"TimesTakeable": 1,
-					"Name": "Calculating",
-					"Description": "Due to your careful planning, during downtime, you may give yourself or another crew member +1 downtime action."
+					"Name": "Calculating Bastard",
+					"Description": "Even when things look like they’re going wrong, they’re all going according to your plan. Whenever you fail a desperate action, you may flashback at no stress cost to describe how you’d foreseen this turn of events. The next action you or one of your allies make will always be from a controlled position with great effect."
 				},
 				{
 					"TimesTakeable": 1,
-					"Name": "Connected",
-					"Description": "During downtime, you get +1 result level when you acquire an asset or reduce heat."
+					"Name": "Known around town",
+					"Description": "During downtime, you get +1 result level when you acquire an asset or reduce heat. In addition, you can declare yourself as the detail for any score that does not involve a faction you are at war with."
 				},
 				{
 					"TimesTakeable": 1,
@@ -505,8 +541,8 @@
 				},
 				{
 					"TimesTakeable": 1,
-					"Name": "Ghost Contract",
-					"Description": "When you shake on a deal, you and your partner—human or otherwise—both bear a mark of your oath. If either breaks the contract, they take level 3 harm, \"Cursed\"."
+					"Name": "Accord",
+					"Description": "When you shake on a deal or draft one in writing, you and your partner—human or otherwise—both bear a mark of your accord. If either breaks the contract, they take level 3 harm, \"Cursed\"."
 				},
 				{
 					"TimesTakeable": 1,
@@ -516,11 +552,11 @@
 				{
 					"TimesTakeable": 1,
 					"Name": "Mastermind",
-					"Description": "You may expend your special armor to protect a teammate, or to push yourself when you gather information or work on a long-term project."
+					"Description": "You may expend your special armour to protect a teammate from social fallout, or to push yourself when you leverage your rank and status - perceive or real - to work on a long-term project."
 				},
 				{
 					"TimesTakeable": 1,
-					"Name": "Weaving the Web",
+					"Name": "Pluck the Thread",
 					"Description": "You gain +1d to Consort when you gather information on a target for a score. You get +1d to the engagement roll for that operation."
 				},
 				{
@@ -530,13 +566,13 @@
 				}
 			],
 			"Rolodex": {
-				"Name": "Shrewd Friends",
+				"Name": "Shrewd Friends and Ingenue Rivals",
 				"Friends": [
-					"Salia, an information broker",
-					"Augus, a master architect",
-					"Jennah, a servant",
-					"Riven, a chemist",
-					"Jeren, a bluecoat archivist"
+					"A broker of secrets",
+					"A chemical engineer",
+					"A weary ambassador",
+					"A master architect",
+					"Your ex-lover"
 				]
 			},
 			"Items": [
@@ -546,7 +582,7 @@
 				},
 				{
 					"Bulk": 1,
-					"Name": "Fine bottle of whiskey"
+					"Name": "Fine bottle of Liquor"
 				},
 				{
 					"Bulk": 1,
@@ -554,11 +590,11 @@
 				},
 				{
 					"Bulk": 0,
-					"Name": "Vial of slumber essence"
+					"Name": "Vial of Lionsbane extract"
 				},
 				{
 					"Bulk": 0,
-					"Name": "Concealed palm pistol"
+					"Name": "A small, concealed blade"
 				}
 			],
 			"DefaultActionPoints": [
@@ -567,25 +603,30 @@
 					"Points": 2
 				},
 				{
-					"Action": "Study",
+					"Action": "Survey",
 					"Points": 1
 				}
 			],
 			"ExperienceCondition": "You addressed a challenge with calculation or conspiracy"
 		},
 		{
-			"Name": "Whisper",
-			"Hook": "Whispers are good at magical stuff and dealing with ghosts. Play whisper a Whisper if you want to meddle with arcane powers.",
+			"Name": "Flux",
+			"Hook": "Fluxes are detectives who deal with undead matters. Play a Flux if you want to solve ghostly problems with skilled deduction.",
 			"SpecialAbilities": [
 				{
 					"TimesTakeable": 1,
-					"Name": "Compel",
-					"Description": "You can Attune to the ghost field to force a nearby ghost to appear and obey a command you give it. You are not supernaturally terrified by a ghost you summon or compel (though your allies may be)."
+					"Name": "Just One More Thing...",
+					"Description": "Take +1d when you survey or consort to uncover a person’s motivations, intentions, or secrets."
 				},
 				{
 					"TimesTakeable": 1,
-					"Name": "Ghost Mind",
-					"Description": "You’re always aware of supernatural entities in your presence. Take +1d when you gather info about the supernatural."
+					"Name": "Spectral Armour",
+					"Description": "You may expend your special armour to resist a consequence caused by any form of undead being, or push yourself when dealing with the undead and the Pitch."
+				},
+				{
+					"TimesTakeable": 1,
+					"Name": "Phasmic Memory",
+					"Description": "When you touch an object or possession that was owned by another person, whether living or deceased, you may spend 2 stress to flashback to a memory that they had. You can ask one of the following questions of the GM that the GM must answer truthfully: Why was this object or possession get left behind? - What did this person not want anyone else to know? - Who did this person take orders from/give orders to?."
 				},
 				{
 					"TimesTakeable": 1,
@@ -594,28 +635,28 @@
 				},
 				{
 					"TimesTakeable": 1,
-					"Name": "Occultist",
-					"Description": "You know the secret ways to Consort with ancient powers, forgotten gods or demons. Once you've consorted with one, you get +1d to command cultists who worship it."
+					"Name": "Deadened Senses (P)",
+					"Description": "You are always aware of any undead beings in your presence, are able to identify them at a glance, and communicate with them. Take +1d when you commune with the ambient dead to Gather Information."
+				},
+				{
+					"TimesTakeable": 1,
+					"Name": "Back Alley Tithes",
+					"Description": "Your services are similar enough to those offered by Yeratan Priesthood and other, similar, religions within the Thunder Span. Collect +2 Stash at the end of each Downtime phase as you conduct small services around your district. Do not collect this bonus stash if you are imprisoned or travelling."
+				},
+				{
+					"TimesTakeable": 1,
+					"Name": "Psychopomp",
+					"Description": "You are skilled in guiding pith spirits to their final rest. If a spirit is unwilling to dissipate, take 2 stress, plus 1 stress per the spirit’s tier, to a maximum of 6 stress. If a spirit has no tier, you take no stress when you use this ability."
 				},
 				{
 					"TimesTakeable": 1,
 					"Name": "Ritual",
-					"Description": "You can Study an occult ritual (or create a new one) to summon a supernatural effect or being. You know the arcane methods to perform ritual sorcery. You begin with one ritual already learned."
+					"Description": "You know how to perform ritual sorcery, an venerable practice used to harness the secret powers of Pith. You can Study an occult ritual (or create a new one) to summon a supernatural spirit or being, or to enact powerful supernatural curses and blessings. You being with one ritual learned."
 				},
 				{
 					"TimesTakeable": 1,
-					"Name": "Strange Methods",
-					"Description": "When you invent or craft a creation with arcane features, take +1 result level to your roll. You begin with one arcane design already known."
-				},
-				{
-					"TimesTakeable": 1,
-					"Name": "Tempest",
-					"Description": "You can push yourself to do one of the following: unleash a stroke of lightning as a weapon—summon a storm in your immediate vicinity (torrential rain, roaring winds, heavy fog, chilling frost/snow, etc.)."
-				},
-				{
-					"TimesTakeable": 1,
-					"Name": "Warded",
-					"Description": "You may expend your special armor to resist a supernatural consequence, or to push yourself when you deal with arcane forces."
+					"Name": "Channel (P)",
+					"Description": "You may push yourself to call a Pith spirit into your body. You must give this spirit the following: a Name, a Memory of its former existence, and two Skills that reflect the person it once was. Create a 4-segment clock. Whenever you use one of those skills, gain a +1d to that roll and mark off one segment on the clock. When all segments are filled, the spirit dissipates."
 				},
 				{
 					"TimesTakeable": 99,
@@ -624,40 +665,37 @@
 				}
 			],
 			"Rolodex": {
-				"Name": "Strange Friends",
+				"Name": "Haunted Friends and Rivals",
 				"Friends": [
-					"Nyryx, a possessor ghost",
-					"Scurlock, a vampire",
-					"Setarra, a demon",
-					"Quellyn, a witch",
-					"Flint, a spirit trafficker"
+					"A lonely forgotten god",
+					"A friendly phantom bartender",
+					"A washed-up detective",
+					"An unlicensed mortician",
+					"A forgetful house vampire"
 				]
 			},
 			"Items": [
 				{
 					"Bulk": 2,
-					"Name": "Fine lightning hook"
+					"Name": "Pithometer"
 				},
 				{
 					"Bulk": 1,
-					"Name": "Fine spirit mask"
-				},
-				{
-					"Bulk": 0,
-					"Name": "Electroplasm vials"
+					"Name": "Thanatological kit"
 				},
 				{
 					"Bulk": 1,
-					"Name": "Spirit bottles (2)"
+					"Name": "Fine Ceremonial Garments"
+				},
+				{
+					"Bulk": 1,
+					"Name": "Fine Spirit Anchor "
 				},
 				{
 					"Bulk": 0,
-					"Name": "Ghost key"
-				},
-				{
-					"Bulk": 0,
-					"Name": "Demonbane charm"
+					"Name": "Pearl charm"
 				}
+
 			],
 			"DefaultActionPoints": [
 				{
@@ -665,11 +703,111 @@
 					"Points": 2
 				},
 				{
-					"Action": "Study",
+					"Action": "Survey",
 					"Points": 1
 				}
 			],
-			"ExperienceCondition": "You addressed a challenge with knowledge or arcane power"
+			"ExperienceCondition": "You addressed a challenge with deduction or arcane power."
+		}
+		{
+			"Name": "Vane",
+			"Hook": "Vanes risk it all to wield dangerous magic and get spectacular results. Play a Vane if you want to play with high-risk, high-reward arcane powers.",
+			"SpecialAbilities": [
+				{
+					"TimesTakeable": 1,
+					"Name": "Shine On (G)(P)",
+					"Description": "Take +1d when making a resistance roll against arcane consequences from dealing with the Pith or the Gyre."
+				},
+				{
+					"TimesTakeable": 1,
+					"Name": "Shift the Current",
+					"Description": "Expend your Special Armour to resist a supernatural consequence or push yourself when you contend with your use of supernatural forces."
+				},
+				{
+					"TimesTakeable": 1,
+					"Name": "Tempest(G)",
+					"Description": "You can push yourself to do one of the following: Unleash a torrent of elemental energy; Grab objects with your mind; Alter your surroundings."
+				},
+				{
+					"TimesTakeable": 1,
+					"Name": "Nothing Ventured, Nothing Gained (G)",
+					"Description": "When you push yourself, may choose to increase the effect by 2 places instead of 1 or add +2d6 instead of 1d6. A supernatural complication with Gyre attributes always occurs as a result of this roll, in addition to that roll’s result."
+				},
+				{
+					"TimesTakeable": 1,
+					"Name": "Skip (G)",
+					"Description": "You may push yourself to either teleport yourself or someone else to teleport a short distance to somewhere that you can clearly see. Everything that is on your person follows. You may extend this effect to additional persons, taking 1 additional stress for each person you affect in this way."
+				},
+				{
+					"TimesTakeable": 1,
+					"Name": "Ineffable",
+					"Description": "You are able to recover quickly from failures that would shake someone else. After making a resistance roll, gain +1d on your next roll. Once per score, you may clear 2 stress."
+				},
+				{
+					"TimesTakeable": 1,
+					"Name": "Twist (G)",
+					"Description": "Gain a permanent mutation with Gyre properties called a Twist. The change must always reflect or contrast your character’s personality and cannot be easily disguised. Gain potency on rolls where your Twist would assist you. Take a disadvantage on rolls where it would hinder you."
+				},
+				{
+					"TimesTakeable": 1,
+					"Name": "Invoke Breath",
+					"Description": "You Command the Gyre to imbue an object or collection of material with life for a single task. This puppet lasts until the task is fulfilled or until one day has passed, whichever comes first."
+				},
+				{
+					"TimesTakeable": 1,
+					"Name": "Miracles at your fingertips",
+					"Description": "Create limited, harmless, minor magical tricks and illusions of the senses at will to entrance and assist others. The Gyre dances in your eyes when you do so."
+				},
+				{
+					"TimesTakeable": 99,
+					"Name": "Veteran",
+					"Description": "Choose a special ability from another source"
+				}
+			],
+			"Rolodex": {
+				"Name": "Dashing Friends and Rivals",
+				"Friends": [
+					"An ambitious musician",
+					"An eccentric baron",
+					"An exiled demon",
+					"A cynical club owner",
+					"A driven revolutionary"
+				]
+			},
+			"Items": [
+				{
+					"Bulk": 0,
+					"Name": "Icon of Power"
+				},
+				{
+					"Bulk": 1,
+					"Name": "Fine eccentric tool"
+				},
+				{
+					"Bulk": 1,
+					"Name": "Fine Curious Garment"
+				},
+				{
+					"Bulk": 2,
+					"Name": "Mysterious Satchel"
+				},
+				{
+					"Bulk": 0,
+					"Name": "Gyrechime"
+				}
+		
+			],
+			"DefaultActionPoints": [
+				{
+					"Action": "Wreck",
+					"Points": 2
+				},
+				{
+					"Action": "Sway",
+					"Points": 1
+				}
+			],
+			"ExperienceCondition": "You addressed a challenge with mayhem or arcane power"
 		}
 	],
 	"Traumas": [
@@ -684,34 +822,44 @@
 	],
 	"Heritages": [
 		{
-			"Name": "Akoros",
-			"BlurbFlavor": "from 'round here in Akoros",
-			"Description": "Akoros is the largest and most industrialized land in the Imperium, and is home to the capitol city as well as Duskwall itself. They’re known as a diverse conglomeration of cultures that have grown together in close proximity for centuries, somewhat like Europe."
+			"Name": "Ulma",
+			"BlurbFlavor": "from the mountain cities of Ul Masit",
+			"Description": "."
 		},
 		{
-			"Name": "The Dagger Isles",
-			"BlurbFlavor": "from the Dagger Isles",
-			"Description": "If you want to be a rootless wanderer you could be from the Dagger Isles. People there often grow up on ships and travel a lot before settling down. They’re known as corsairs and merchants who live without lightning barriers—dealing with spirits in other ways."
+			"Name": "Dolmori",
+			"BlurbFlavor": "from the industrious Phen Dolmor",
+			"Description": "."
 		},
 		{
-			"Name": "Iruvia",
-			"BlurbFlavor": "from the desert kingdom of Iruvia",
-			"Description": "If you want to be from a culture considered “foreign” by the locals, you could be from Iruvia, a rich and powerful desert kingdom far to the south. It’s another diverse land of varying cultures similar to old Persia, Egypt, and India."
+			"Name": "Okasellen",
+			"BlurbFlavor": "from the low-lying plateaus of Phen Okasel",
+			"Description": "."
 		},
 		{
-			"Name": "Severos",
-			"BlurbFlavor": "from the deathlands of Severos",
-			"Description": "If you want to be from a place considered “wild” by the rest of the empire, you could be from Severos. Outside the few Imperial settlements, most Severosi live in nomadic horse-tribes scattered across the blasted deathlands, surviving within the ruins of ancient arcane fortresses which still repel spirits."
+			"Name": "Xephralese",
+			"BlurbFlavor": "from the revolutionary thanatocracy of Phen Xephral",
+			"Description": "."
 		},
 		{
-			"Name": "Skovlan",
-			"BlurbFlavor": "from the colonized island of Skovlan",
-			"Description": "If you want to be from a marginalized people, you could be from Skovlan, the island kingdom just across the sea from Doskvol. Skovlan was last to be brought under Imperial rule, over the course of the 36-year Unity War (which ended only a few years ago). Many Skovlander refugees who lost their homes and jobs in the destruction of the war have come to Doskvol seeking new opportunities."
+			"Name": "Bentruse",
+			"BlurbFlavor": "from the distant, ambitious Republic of Benturst",
+			"Description": "."
 		},
 		{
-			"Name": "Tycheros",
-			"BlurbFlavor": "from the weird, distant land of Tycheros",
-			"Description": "If you want to be weird, you can be from Tycheros. It’s a semi-mythical place, far away beyond the northern Void Sea. Everyone says that the people there are part-demon. If you choose Tycherosi heritage, also create a demonic telltale (like black shark eyes, feathers instead of hair, etc.) that marks your character."
+			"Name": "Aujkan",
+			"BlurbFlavor": "from the ancient venerable Threefold Aujka, or the more fundamentalist Blessed Aujka",
+			"Description": "."
+		},
+		{
+			"Name": "Chithe",
+			"BlurbFlavor": "from the predatory, nomadic cities of the Chithe Confederation",
+			"Description": "."
+		},
+		{
+			"Name": "Yvesis",
+			"BlurbFlavor": "from the lands ruled by the rigid bureaucracy of the Imperial Hierarchy of Yvesio",
+			"Description": "."
 		}
 	],
 	"Vices": [
@@ -719,132 +867,85 @@
 			"Name": "Faith",
 			"Description": "You’re dedicated to an unseen power, forgotten god, ancestor, etc.",
 			"Sources": [
-				"Mother Narya, House of the Weeping Lady, Six Towers.",
-				"Ilacille, the ruins of the Temple to forgotten gods, Coalridge.",
-				"Nelisanne, The Church of the Ecstasy of the Flesh, Brightstone.",
-				"Lord Penderyn, the Archive of Echoes, Charterhall."
 			]
 		},
 		{
 			"Name": "Gambling",
 			"Description": "You crave games of chance, betting on sporting events, etc.",
 			"Sources": [
-				"Spogg’s dice game, Crow’s Foot.",
-				"Grist, boxing, the Docks.",
-				"Helene, Silver Stag casino, Silkshore.",
-				"Master Vreen, hound racing, Nightmarket.",
-				"Lady Dusk, the Dusk Manor Club, Whitecrown.",
-				"Sergeant Velk, the fighting pits, Dunslough."
 			]
 		},
 		{
 			"Name": "Luxury",
 			"Description": "Expensive or ostentatious displays of opulence.",
 			"Sources": [
-				"Singer, bath house, Crow’s Foot.",
-				"Harvale Brogan, the Centuralia Club, Brightstone.",
-				"Traven’s smoke shop, Coalridge.",
-				"Dunridge & Sons fine fabrics and tailoring, Nightmarket.",
-				"Chef Roselle, the Golden Plum restaurant, Six Towers.",
-				"Maestro Helleren, Spiregarden theater, Whitecrown."
 			]
 		},
 		{
 			"Name": "Pleasure",
 			"Description": "Gratification from lovers, food, drink, drugs, art, theater, etc.",
 			"Sources": [
-				"Singer, bath house, Crow’s Foot.",
-				"Harvale Brogan, the Centuralia Club, Brightstone.",
-				"Traven’s smoke shop, Coalridge.",
-				"Dunridge & Sons fine fabrics and tailoring, Nightmarket.",
-				"Chef Roselle, the Golden Plum restaurant, Six Towers.",
-				"Maestro Helleren, Spiregarden theater, Whitecrown.",
-				"Mardin Gull, the Leaky Bucket, tavern, Crow’s Foot.",
-				"Pux Bolin, the Harping Monkey, tavern, Nightmarket.",
-				"Helene, Silver Stag casino, Silkshore.",
-				"Lady Freyla, the Emperor’s Cask, bar, Whitecrown.",
-				"Avrick, powder dealer, Barrowcleft.",
-				"Rolan Volaris, the Veil, social club, Nightmarket.",
-				"Madame Tesslyn, the Red Lamp, brothel, Silkshore.",
-				"Traven’s smoke shop, Coalridge.",
-				"Eldrin Prichard, the Silver Swan pleasure barge, Brightstone canals.",
-				"Jewel, Bird, and Shine, Catcrawl Alley, the Docks."
 			]
 		},
 		{
 			"Name": "Obligation",
 			"Description": "You're devoted to a family, a cause, an organization, a charity, etc.",
 			"Sources": [
-				"Family members (heritage).",
-				"Former co-workers (background).",
-				"Hutton, Skovlander Refugees/Revolutionaries, Charhollow.",
-				"The Circle of Flame, a secret society."
 			]
 		},
 		{
 			"Name": "Stupor",
 			"Description": "You seek oblivion in the abuse of drugs, drinking to excess, getting beaten to a pulp in the fighting pits, etc.",
 			"Sources": [
-				"Mardin Gull, the Leaky Bucket, tavern, Crow’s Foot.",
-				"Pux Bolin, the Harping Monkey, tavern, Nightmarket.",
-				"Helene, Silver Stag casino, Silkshore.",
-				"Lady Freyla, the Emperor’s Cask, bar, Whitecrown.",
-				"Avrick, powder dealer, Barrowcleft.",
-				"Rolan Volaris, the Veil, social club, Nightmarket.",
-				"Madame Tesslyn, the Red Lamp, brothel, Silkshore.",
-				"Traven’s smoke shop, Coalridge.",
-				"Eldrin Prichard, the Silver Swan pleasure barge, Brightstone canals.",
-				"Jewel, Bird, and Shine, Catcrawl Alley, the Docks."
 			]
 		},
 		{
 			"Name": "Weird",
 			"Description": "You experiment with strange essences, consort with rogue spirits, observe bizarre rituals or taboos, etc.",
 			"Sources": [
-				"The hooded proprietor of a half-flooded grotto tavern near the docks. Strange passageways lead to stranger chambers beyond.",
-				"Father Yoren, House of the Weeping Lady, Six Towers.",
-				"“Salia,” a spirit of the Reconciled, which moves from body to body at their whim.",
-				"Sister Thorn, deathlands scavenger gang, Gaddoc Station.",
-				"Ojak, Tycherosi rooftop market vendor, Silkshore.",
-				"Aranna the Blessed, cultist of a forgotten god, barge moored in Nightmarket."
 			]
 		}
 	],
 	"Backgrounds": [
 		{
 			"Name": "Academic",
-			"Example": "A scholar, a professor or student from Doskvol Academy, a philosopher or journalist, etc.",
+			"Example": "A scholar, a professor, a student, a philosopher, a journalist, etc.",
 			"BlurbFlavor": "an academic"
 		},
 		{
 			"Name": "Labor",
-			"Example": "A servant, a factory worker, a coach driver, a docker, a sailor, a Rail Jack, etc.",
+			"Example": "A servant, a farmer, a miner, a factory worker, a dock worker, an airshipwright, a rail layer, a miner, etc.",
 			"BlurbFlavor": "a laborer"
 		},
 		{
 			"Name": "Law",
-			"Example": "An advocate or barrister, a Bluecoat or inspector (or even Spirit Warden), a prison guard from Ironhook, etc.",
+			"Example": "An advocate, a barrister, a judge, a private inspector, a prison guard, a bodyguard, etc.",
 			"BlurbFlavor": "an \"incorruptible\" representative of the law"
 		},
 		{
 			"Name": "Trade",
-			"Example": "A shopkeeper, a merchant, a skilled crafts-person, a shipping agent, etc.",
+			"Example": "A shopkeeper, a merchant, a skilled crafts-person, a shipping agent, an accountant, etc.",
 			"BlurbFlavor": "a trader"
 		},
 		{
 			"Name": "Military",
-			"Example": "An Imperial or Skovlander soldier, a mercenary, an intelligence operative, a strategist, a training instructor, etc.",
+			"Example": "A soldier, a guerrilla, a mercenary, an intelligence operative, a strategist, an instructor, a veteran, etc.",
 			"BlurbFlavor": "an enlisted"
 		},
 		{
 			"Name": "Noble",
-			"Example": "A dilettante, a courtier, the scion of a fallen house, etc.",
+			"Example": "A dilettante, a courtier, the scion of a fallen house, a fashionista, a trend setter, etc.",
 			"BlurbFlavor": "a noble"
 		},
 		{
 			"Name": "Underworld",
 			"Example": "A street urchin, gang member, young thug, or other outcast who grew up on the streets.",
 			"BlurbFlavor": "a \"law-abiding citizen\""
+		},
+		{
+			"Name": "Religious",
+			"Example": "A priest, a shaman, a soothsayer, an occultist, an exorcist, a preacher, etc.",
+			"BlurbFlavor": "a lapsed or practicing faithful"
 		}
 	],
 	"Attributes": [
@@ -932,14 +1033,6 @@
 		{
 			"Bulk": 1,
 			"Name": "Throwing Knives"
-		},
-		{
-			"Bulk": 1,
-			"Name": "A Pistol"
-		},
-		{
-			"Bulk": 1,
-			"Name": "A 2nd Pistol"
 		},
 		{
 			"Bulk": 2,
